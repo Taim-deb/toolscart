@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UUID Generator - ToolScart</title>
+  <link rel="icon" href="/IMG_9203.JPG.ico" type="image/x-icon">
+  <meta name="description" content="UUID Generator - Generate UUID v4 values.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="/">ToolScart</a>
+    <nav><a href="/">Tools</a></nav>
+  </header>
+
+  <main class="wrap page tool">
+    <div class="crumb"><a href="/">Back to Tools</a><span>ToolScart</span></div>
+    <h1>UUID Generator</h1>
+    <p>Generate UUID v4 values.</p>
+
+    <div class="stack">
+      <div class="toolbar">
+        <input id="count" type="number" min="1" max="100" value="1" style="max-width:120px">
+        <button id="process" type="button" class="btn">Generate</button>
+        <button id="copy" type="button" class="btn">Copy</button>
+        <button id="export" type="button" class="btn">Export File</button>
+        <button id="clear" type="button" class="btn">Clear</button>
+      </div>
+      <div id="filemeta" class="file-meta"></div>
+      <div class="label">Input</div>
+      <textarea id="in" aria-label="Input"></textarea>
+      <div class="label">Output</div>
+      <div id="out" class="stack"></div>
+      <div id="status" class="status"></div>
+    </div>
+  </main>
+
+  <script src="../../js/helpers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
