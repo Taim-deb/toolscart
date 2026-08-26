@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Border Radius Generator - ToolScart</title>
+  <link rel="icon" href="/IMG_9203.JPG.ico" type="image/x-icon">
+  <meta name="description" content="CSS Border Radius Generator - Shape corners with linked controls.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar wrap"><a class="brand" href="/">ToolScart</a><nav><a href="/" style="background:#f2d94e">Tools</a></nav></header>
+  <main class="wrap page tool">
+    <div class="crumb"><a href="/">Back to Tools</a><span>ToolScart</span></div>
+    <h1>CSS Border Radius Generator</h1>
+    <p>Shape corners with linked controls.</p>
+    <div class="grid2">
+      <div class="stack">
+        <label><input id="link" type="checkbox" checked> Link corners</label>
+        <label>TL <input id="tl" type="range" min="0" max="100" value="12"></label>
+        <label>TR <input id="tr" type="range" min="0" max="100" value="12"></label>
+        <label>BR <input id="br" type="range" min="0" max="100" value="12"></label>
+        <label>BL <input id="bl" type="range" min="0" max="100" value="12"></label>
+        <div class="actions">
+          <button id="process" type="button" class="btn">Process</button>
+          <button id="copy" type="button" class="btn">Copy</button>
+          <button id="export" type="button" class="btn">Export File</button>
+          <button id="clear" type="button" class="btn">Clear</button>
+        </div>
+        <div id="status" class="status"></div>
+        <textarea id="out" aria-label="Output" readonly></textarea>
+      </div>
+      <div><div id="box" class="preview" style="min-height:240px;display:grid;place-items:center"><div style="width:120px;height:120px;border:1px solid #1c1c1c;background:#d9d9d9"></div></div></div>
+    </div>
+  </main>
+  <script src="../../js/helpers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
