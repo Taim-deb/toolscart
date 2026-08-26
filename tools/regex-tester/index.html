@@ -9,16 +9,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar wrap"><a class="brand" href="/">ToolScart</a><nav><a href="/" style="background:#f2d94e">Tools</a></nav></header>
+  <header class="topbar wrap">
+    <a class="brand" href="/">ToolScart</a>
+    <nav><a href="/">Tools</a></nav>
+  </header>
+
   <main class="wrap page tool">
     <div class="crumb"><a href="/">Back to Tools</a><span>ToolScart</span></div>
     <h1>Regex Tester</h1>
     <p>Test patterns and inspect matches.</p>
+
     <div class="grid2">
       <div class="stack">
         <label>Pattern <input id="pattern" type="text" value="\\w+"></label>
         <label>Flags <input id="flags" type="text" value="g"></label>
-        <label>Text <textarea id="in" aria-label="Input">ToolScart keeps things simple.</textarea></label>
+        <div class="label">Input</div>
+        <textarea id="in" aria-label="Input">ToolScart keeps things simple.</textarea>
         <div class="toolbar">
           <label class="btn file-label">Upload File<input class="file-input" id="file" type="file" accept=".txt,.md,.html,.css,.js,.json,.csv,.sql"></label>
           <button id="process" type="button" class="btn">Process</button>
@@ -30,10 +36,12 @@
         <div id="status" class="status"></div>
       </div>
       <div class="stack">
+        <div class="label">Output</div>
         <div id="out" class="stack"></div>
       </div>
     </div>
   </main>
+
   <script src="../../js/helpers.js"></script>
   <script src="script.js"></script>
 </body>

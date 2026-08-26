@@ -9,13 +9,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar wrap"><a class="brand" href="/">ToolScart</a><nav><a href="/" style="background:#f2d94e">Tools</a></nav></header>
+  <header class="topbar wrap">
+    <a class="brand" href="/">ToolScart</a>
+    <nav><a href="/">Tools</a></nav>
+  </header>
+
   <main class="wrap page tool">
     <div class="crumb"><a href="/">Back to Tools</a><span>ToolScart</span></div>
     <h1>CSS Box Shadow Generator</h1>
     <p>Build box-shadow CSS values.</p>
+
     <div class="grid2">
       <div class="stack">
+        <div class="label">Input</div>
         <label>X <input id="x" type="range" min="-50" max="100" value="10"></label>
         <label>Y <input id="y" type="range" min="-50" max="100" value="10"></label>
         <label>Blur <input id="blur" type="range" min="0" max="100" value="18"></label>
@@ -30,11 +36,17 @@
           <button id="clear" type="button" class="btn">Clear</button>
         </div>
         <div id="status" class="status"></div>
+        <div class="label">Output</div>
         <textarea id="out" aria-label="Output" readonly></textarea>
       </div>
-      <div><div id="box" class="preview" style="min-height:240px;display:grid;place-items:center"><div style="width:120px;height:120px;border:1px solid #1c1c1c;background:#d9d9d9"></div></div></div>
+      <div>
+        <div id="box" class="preview" style="min-height:240px;display:grid;place-items:center">
+          <div style="width:120px;height:120px;border:1px solid #1c1c1c;background:#d9d9d9"></div>
+        </div>
+      </div>
     </div>
   </main>
+
   <script src="../../js/helpers.js"></script>
   <script src="script.js"></script>
 </body>

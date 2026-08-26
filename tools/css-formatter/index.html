@@ -1,2 +1,44 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CSS Formatter / Minifier - ToolScart</title>
-  <link rel="icon" href="/IMG_9203.JPG.ico" type="image/x-icon"><meta name="description" content="CSS Formatter / Minifier - Format or compact CSS locally."><link rel="stylesheet" href="style.css"></head><body><header class="topbar wrap"><a class="brand" href="/">ToolScart</a><nav><a href="/">Tools</a></nav></header><main class="wrap page tool"><div class="crumb"><a href="/">Back to Tools</a><span>ToolScart</span></div><h1>CSS Formatter / Minifier</h1><p>Format or compact CSS locally.</p><div class="stack"><div class="toolbar"><label class="btn file-label">Upload File<input class="file-input" id="file" type="file" accept=".css,.txt"></label><button id="modeA" type="button" class="btn active">Format</button><button id="modeB" type="button" class="btn">Minify</button><button id="process" type="button" class="btn">Process</button><button id="copy" type="button" class="btn">Copy</button><button id="export" type="button" class="btn">Export File</button><button id="clear" type="button" class="btn">Clear</button></div><div id="filemeta" class="file-meta"></div><textarea id="in" aria-label="Input"></textarea><textarea id="out" aria-label="Output" readonly></textarea><div id="status" class="status"></div></div></main><script src="../../js/helpers.js"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Formatter / Minifier - ToolScart</title>
+  <link rel="icon" href="/IMG_9203.JPG.ico" type="image/x-icon">
+  <meta name="description" content="CSS Formatter / Minifier - Format or compact CSS locally.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="/">ToolScart</a>
+    <nav><a href="/">Tools</a></nav>
+  </header>
+
+  <main class="wrap page tool">
+    <div class="crumb"><a href="/">Back to Tools</a><span>ToolScart</span></div>
+    <h1>CSS Formatter / Minifier</h1>
+    <p>Format or compact CSS locally.</p>
+
+    <div class="stack">
+      <div class="toolbar">
+        <label class="btn file-label">Upload File<input class="file-input" id="file" type="file" accept=".css,.txt"></label>
+        <button id="modeA" type="button" class="btn active">Format</button>
+        <button id="modeB" type="button" class="btn">Minify</button>
+        <button id="process" type="button" class="btn">Process</button>
+        <button id="copy" type="button" class="btn">Copy</button>
+        <button id="export" type="button" class="btn">Export File</button>
+        <button id="clear" type="button" class="btn">Clear</button>
+      </div>
+      <div id="filemeta" class="file-meta"></div>
+      <div class="label">Input</div>
+      <textarea id="in" aria-label="Input"></textarea>
+      <div class="label">Output</div>
+      <textarea id="out" aria-label="Output" readonly></textarea>
+      <div id="status" class="status"></div>
+    </div>
+  </main>
+
+  <script src="../../js/helpers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
