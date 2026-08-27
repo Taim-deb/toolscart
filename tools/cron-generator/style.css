@@ -1,1 +1,23 @@
 @import url("../../global.css");
+
+.cron-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.cron-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.cron-row input {
+  border: 1px solid var(--border);
+  padding: 8px;
+  font-size: 12px;
+  color: var(--text);
+}

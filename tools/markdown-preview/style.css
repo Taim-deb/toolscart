@@ -1,1 +1,35 @@
 @import url("../../global.css");
+
+.preview {
+  white-space: normal;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.preview h1, .preview h2, .preview h3,
+.preview h4, .preview h5, .preview h6 {
+  font-family: inherit;
+  margin: 0 0 0.5em;
+  line-height: 1.3;
+}
+
+.preview h1 { font-size: 1.8em; }
+.preview h2 { font-size: 1.5em; }
+.preview h3 { font-size: 1.3em; }
+.preview h4 { font-size: 1.15em; }
+.preview h5 { font-size: 1.05em; }
+.preview h6 { font-size: 1em; }
+
+.preview p { margin: 0 0 1em; }
+
+.preview strong { font-weight: 700; }
+.preview em { font-style: italic; }
+
+.preview code {
+  font-family: monospace;
+  background: #f0f0f0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0 4px;
+  font-size: 0.9em;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body>
   <header class="topbar wrap">
     <a class="brand" href="/">ToolScart</a>
-    <nav><a href="/">Tools</a></nav>
+    <nav><a href="https://github.com/taim-deb/toolscart">GitHub</a></nav>
   </header>
 
   <main class="wrap page tool">
@@ -28,7 +28,13 @@
       </div>
       <div id="filemeta" class="file-meta"></div>
       <div class="label">Input</div>
-      <textarea id="in" aria-label="Input"></textarea>
+      <div class="cron-row">
+        <label>Minute<input data-cron type="text" placeholder="*"></label>
+        <label>Hour<input data-cron type="text" placeholder="*"></label>
+        <label>Day of Month<input data-cron type="text" placeholder="*"></label>
+        <label>Month<input data-cron type="text" placeholder="*"></label>
+        <label>Day of Week<input data-cron type="text" placeholder="*"></label>
+      </div>
       <div class="label">Output</div>
       <textarea id="out" aria-label="Output" readonly></textarea>
       <div id="status" class="status"></div>
