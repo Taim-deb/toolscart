@@ -1,0 +1,24 @@
+# Stop the site from serving stale HTML/JS after updates
+/index.html
+  Cache-Control: no-cache
+
+/tools/*
+  Cache-Control: no-cache
+
+/privacy.html
+  Cache-Control: no-cache
+
+/404.html
+  Cache-Control: no-cache
+
+/js/*
+  Cache-Control: public, max-age=3600
+
+/tools/*/script.js
+  Cache-Control: public, max-age=3600
+
+/favicon.ico
+  Cache-Control: public, max-age=86400
+
+/favicon.png
+  Cache-Control: public, max-age=86400

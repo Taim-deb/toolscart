@@ -1,1 +1,19 @@
-const $=s=>document.querySelector(s), T=window.ToolScart;const update=()=>{const val=$('#type').value==='radial'?'radial-gradient(circle, '+$('#c1').value+', '+$('#c2').value+')':'linear-gradient('+$('#angle').value+'deg, '+$('#c1').value+', '+$('#c2').value+')'; $('#swatch').style.background=val; $('#out').value='background: '+val+';'}; ['c1','c2','type','angle'].forEach(id=>$('#'+id).addEventListener('input',update)); $('#process').onclick=update; $('#copy').onclick=()=>T.copy($('#out').value,'status'); $('#export').onclick=()=>T.download('gradient.css',$('#out').value); $('#clear').onclick=clearAll; update();
+const $ = s => document.querySelector(s);
+const T = window.ToolScart;
+
+const update = () => {
+  const val = $("#type").value === "radial"
+    ? "radial-gradient(circle, " + $("#c1").value + ", " + $("#c2").value + ")"
+    : "linear-gradient(" + $("#angle").value + "deg, " + $("#c1").value + ", " + $("#c2").value + ")";
+  $("#swatch").style.background = val;
+  $("#out").value = "background: " + val + ";";
+};
+
+["c1", "c2", "type", "angle"].forEach(id => $("#" + id).addEventListener("input", update));
+
+$("#process").onclick = update;
+$("#copy").onclick = () => T.copy($("#out").value, "status");
+$("#export").onclick = () => T.download("gradient.css", $("#out").value);
+$("#clear").onclick = clearAll;
+
+update();
