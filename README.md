@@ -1,4 +1,6 @@
 # ToolScart
+<img width="1917" height="1077" alt="toolscart" src="https://github.com/user-attachments/assets/b758bb8f-c1c6-45a6-a691-ef3ba1b51100" />
+
 
 ## Developer-first tools. Open source. Private by default.
 
